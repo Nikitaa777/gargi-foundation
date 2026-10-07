@@ -1,0 +1,670 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gargi Foundation | Early Intervention & Therapy Centre</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2e7d32',
+                            lightGreen: '#4caf50',
+                            teal: '#00796b',
+                            amber: '#ffb300',
+                            orange: '#f57c00',
+                            purple: '#6a1b9a',
+                            cream: '#fcfbf7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #fcfbf7;
+            background-image: radial-gradient(#4caf50 0.75px, transparent 0.75px), radial-gradient(#00796b 0.75px, #fcfbf7 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            background-opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-slate-800 font-sans antialiased selection:bg-brand-green selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-green text-white text-xs sm:text-sm py-2 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span><i class="fas fa-map-marker-alt mr-1.5 text-brand-amber"></i> F-003, Antriksh Golf View 1, Sector 78, Noida</span>
+                <span><i class="fas fa-shield-alt mr-1.5 text-brand-amber"></i> Reg. No: 202400743044492</span>
+            </div>
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <a href="https://linktr.ee/missioneurydice" target="_blank" class="hover:text-brand-amber transition font-semibold"><i class="fas fa-link mr-1.5 text-brand-amber"></i> Linktree</a>
+                <a href="tel:8527310311" class="hover:text-brand-amber transition font-semibold"><i class="fas fa-phone-alt mr-1.5"></i> +91 8527310311</a>
+                <a href="mailto:gargisewa04@gmail.com" class="hover:text-brand-amber transition hidden md:inline"><i class="fas fa-envelope mr-1.5"></i> gargisewa04@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-brand-green/10 rounded-full flex items-center justify-center text-brand-green text-2xl font-bold font-serif">G</div>
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight font-serif">GARGI FOUNDATION</h1>
+                    <p class="text-xs text-brand-teal font-medium tracking-wider uppercase">Early Intervention & Therapy Centre</p>
+                </div>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 font-medium text-slate-700">
+                <a href="#services" class="hover:text-brand-green transition">Services</a>
+                <a href="#assessment" class="hover:text-brand-green transition">Assessments</a>
+                <a href="#founders" class="hover:text-brand-green transition">Founders</a>
+                <a href="#quiz" class="hover:text-brand-green transition text-brand-teal font-semibold"><i class="fas fa-wand-magic-sparkles mr-1"></i> Support Finder</a>
+                <a href="#about" class="hover:text-brand-green transition">About Trust</a>
+                <a href="#contact" class="hover:text-brand-green transition">Contact</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#book" class="bg-brand-green hover:bg-brand-green/90 text-white font-semibold px-5 py-2.5 rounded-full shadow-md shadow-brand-green/20 transition transform hover:-translate-y-0.5 text-sm sm:text-base">
+                    <i class="fas fa-calendar-check mr-2"></i> Book Appointment
+                </a>
+                <button id="mobileMenuBtn" class="lg:hidden text-slate-700 p-2 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-lg">
+            <a href="#services" class="block text-slate-700 font-medium py-1">Services</a>
+            <a href="#assessment" class="block text-slate-700 font-medium py-1">Assessments</a>
+            <a href="#founders" class="block text-slate-700 font-medium py-1">Founders</a>
+            <a href="#quiz" class="block text-brand-teal font-semibold py-1">Support Finder Quiz</a>
+            <a href="#about" class="block text-slate-700 font-medium py-1">About Trust</a>
+            <a href="#contact" class="block text-slate-700 font-medium py-1">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern py-12 lg:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-1.5 rounded-full text-sm font-semibold shadow-sm">
+                    <span class="animate-pulse w-2 h-2 rounded-full bg-amber-600"></span> Admissions Open for Children (Age 3-12 Years)
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extxl font-serif text-slate-900 tracking-tight leading-tight">
+                    Helping Every Child Reach Their <span class="text-brand-green underline decoration-brand-amber">Full Potential</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                    Personalised support for children with autism, ADHD, learning disabilities, and developmental needs at our professional centre in Noida.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#book" class="w-full sm:w-auto bg-brand-green hover:bg-brand-green/90 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-green/30 transition transform hover:-translate-y-1 text-center">
+                        Schedule Consultation <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="https://wa.me/918527310311?text=Hello%20Gargi%20Foundation,%20I%20want%20to%20know%20more%20about%20therapy%20services." target="_blank" class="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-4 rounded-xl shadow-md transition text-center">
+                        <i class="fab fa-whatsapp text-xl mr-2"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="pt-6 border-t border-slate-200 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">100%</p>
+                        <p class="text-xs text-slate-500 font-medium">Compassionate Care</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">Expert</p>
+                        <p class="text-xs text-slate-500 font-medium">Qualified Therapists</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-slate-900">Noida</p>
+                        <p class="text-xs text-slate-500 font-medium">Sector 78 Facility</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -top-6 -left-6 w-72 h-72 bg-brand-lightGreen/20 rounded-full blur-3xl -z-10"></div>
+                <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-brand-amber/20 rounded-full blur-3xl -z-10"></div>
+                <div class="bg-white p-6 rounded-3xl shadow-2xl border border-slate-100 relative space-y-6">
+                    <div class="bg-gradient-to-br from-brand-teal to-brand-green text-white p-6 rounded-2xl shadow-md">
+                        <h3 class="text-xl font-bold font-serif mb-1">Every Child Deserves The Best</h3>
+                        <p class="text-emerald-100 text-sm">Communicate • Learn • Grow • Belong</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Assess & Understand</h4>
+                                <p class="text-sm text-slate-600">Detailed evaluation of child's strengths and challenges.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Plan & Teach</h4>
+                                <p class="text-sm text-slate-600">Personalised play-based therapy and education plan.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-teal-100 text-brand-teal flex items-center justify-center shrink-0 font-bold">3</div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Support & Empower</h4>
+                                <p class="text-sm text-slate-600">Parent guidance and skill training for independence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
+                        <p class="text-xs text-amber-900 font-semibold uppercase tracking-wider">NGO Darpan Unique ID</p>
+                        <p class="text-sm font-bold text-amber-950 font-mono">UP/2024/0431515</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-green font-semibold uppercase tracking-wider text-sm">Professional Therapies</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-1">Our Core Services</h2>
+                <p class="text-slate-600 mt-2">Comprehensive therapeutic interventions designed to build independence, communication, and confidence.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-100 text-brand-teal flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-teal group-hover:text-white transition">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif mb-3">Occupational Therapy</h3>
+                        <p class="text-slate-600 text-sm mb-6">Sensory integration and motor skill enhancement for everyday activities in our specialized centre.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Sensory Integration & Regulation</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Fine & Gross Motor Skills</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Handwriting & Self-care</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Focus & Coordination</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-semibold py-3 rounded-xl transition">
+                        Book Consultation <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-purple-100 text-brand-purple flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-purple group-hover:text-white transition">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif mb-3">ABA Therapy</h3>
+                        <p class="text-slate-600 text-sm mb-6">Applied Behavior Analysis for positive behavioral development and skill acquisition.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Behaviour Management</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Social Skills Training</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Daily Living Skills</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Positive Behaviour Support</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-semibold py-3 rounded-xl transition">
+                        Book Consultation <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-brand-orange flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-orange group-hover:text-white transition">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif mb-3">Speech Therapy</h3>
+                        <p class="text-slate-600 text-sm mb-6">Overcoming speech barriers, clarity, and building social communication.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Speech Clarity & Articulation</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Vocabulary & Language Skills</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Fluency & Social Communication</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Oral-motor & Feeding Support</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-semibold py-3 rounded-xl transition">
+                        Book Consultation <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/85 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-700 group-hover:text-white transition">
+                            <i class="fas fa-ear-listen"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif mb-3">Auditory Verbal Therapy</h3>
+                        <p class="text-slate-600 text-sm mb-6">Enabling children with hearing impairment to learn to listen and speak.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Listening Skill Development</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Spoken Language Acquisition</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Auditory Training</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Parent-guided Therapy</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-semibold py-3 rounded-xl transition">
+                        Book Consultation <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif mb-3">Centre-Based Therapy</h3>
+                        <p class="text-slate-600 text-sm mb-6">Structured developmental environment tailored for children at our Noida facility.</p>
+                        <ul class="space-y-2.5 text-sm text-slate-700 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Child-Friendly Clinic Environment</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Professional Expert Therapists</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Regular Progress Tracking</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-green"></i> Parent Guidance & Counselling</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-semibold py-3 rounded-xl transition">
+                        Book Consultation <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gradient-to-br from-brand-green to-brand-teal text-white rounded-3xl p-8 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-white/20 text-white flex items-center justify-center text-2xl mb-6">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-serif mb-3">Holistic Care & Growth</h3>
+                        <p class="text-emerald-100 text-sm mb-6">Empowering children to reach their fullest potential and achieve independence.</p>
+                        <ul class="space-y-2.5 text-sm text-emerald-100 mb-6">
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-amber"></i> Individualized Care Plans</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-amber"></i> Experienced & Qualified Specialists</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-amber"></i> Comprehensive Progress Tracking</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check text-brand-amber"></i> Supportive Family Environment</li>
+                        </ul>
+                    </div>
+                    <a href="#book" class="inline-flex items-center justify-center w-full bg-white text-brand-green hover:bg-amber-100 font-bold py-3 rounded-xl transition shadow-md">
+                        Get Started Today <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Services Section -->
+    <section id="assessment" class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-teal font-semibold uppercase tracking-wider text-sm">Diagnostic Evaluations</span>
+                <h2 class="text-3xl font-bold font-serif text-slate-900 mt-1">Professional Assessment Services</h2>
+                <p class="text-slate-600 mt-2">Precise evaluations to uncover strengths, challenges, and create targeted intervention roadmaps.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-brand-cream rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-clipboard-question"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Psychological Assessment</h3>
+                    <p class="text-sm text-slate-600">Comprehensive evaluation of emotional, behavioural, and cognitive functioning.</p>
+                </div>
+                <div class="bg-brand-cream rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-brand-orange flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Behavioral Assessment</h3>
+                    <p class="text-sm text-slate-600">Assessment of behaviour patterns to understand challenges and plan effective support.</p>
+                </div>
+                <div class="bg-brand-cream rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-green flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">IQ & Behaviour Assessments</h3>
+                    <p class="text-sm text-slate-600">Standardized intelligence testing and behavioural evaluations to assess cognitive abilities and potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section id="founders" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-green font-semibold uppercase tracking-wider text-sm">Leadership & Vision</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-1">Our Founders</h2>
+                <p class="text-slate-600 mt-2">United by a shared vision to provide exceptional early intervention, therapy, and developmental support for children.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Founder 1: Dr. Soni Chaudhary -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="image_10.png" alt="Dr. Soni Chaudhary" class="w-20 h-20 rounded-2xl object-cover shadow-md border-2 border-brand-green/20">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 font-serif">Dr. Soni Chaudhary</h3>
+                                <p class="text-xs text-brand-teal font-semibold mt-0.5">Co-Founder</p>
+                                <p class="text-xs text-slate-500 mt-1 font-mono">RCI Reg. No: A14722</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-sm text-slate-600 mb-6">
+                            <p><strong class="text-slate-900">Expertise:</strong> Senior Audiologist & Speech-Language Pathologist with 17+ years of clinical excellence.</p>
+                            <p><strong class="text-slate-900">Background:</strong> MASLP (Osmania University), Fellowship in Swallowing & Dysphagia, AVT Specialist.</p>
+                            <p><strong class="text-slate-900">Affiliations:</strong> Consultant at Yatharth Super Speciality Hospital & Vaani The Speech & Hearing Clinic.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>ISHA Life Member</span>
+                        <span class="text-brand-green font-semibold">Founder</span>
+                    </div>
+                </div>
+
+                <!-- Founder 2: Alka Shankar -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-2xl mb-6 font-serif font-bold">AS</div>
+                        <h3 class="text-xl font-bold text-slate-900 font-serif mb-1">Alka Shankar</h3>
+                        <p class="text-xs text-brand-orange font-semibold mb-4">Co-Founder</p>
+                        <div class="space-y-3 text-sm text-slate-600 mb-6">
+                            <p><strong class="text-slate-900">Expertise:</strong> Education Leader & Early Childhood Development Specialist with 8+ years of leadership.</p>
+                            <p><strong class="text-slate-900">Background:</strong> Master's in Biotechnology, former Research Scholar at University of Florida & Merck Pharmaceutical.</p>
+                            <p><strong class="text-slate-900">Vision:</strong> Founder & Director of Muddy Puddle Playschool & Daycare, focused on holistic and nurturing child development.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>Education Expert</span>
+                        <span class="text-brand-orange font-semibold">Founder</span>
+                    </div>
+                </div>
+
+                <!-- Founder 3: Rashmi Kumari -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-brand-green flex items-center justify-center text-2xl mb-6 font-serif font-bold">RK</div>
+                        <h3 class="text-xl font-bold text-slate-900 font-serif mb-1">Rashmi Kumari</h3>
+                        <p class="text-xs text-brand-green font-semibold mb-4">Co-Founder</p>
+                        <div class="space-y-3 text-sm text-slate-600 mb-6">
+                            <p><strong class="text-slate-900">Expertise:</strong> Community Outreach, Brand Strategy, and Promotion Operations.</p>
+                            <p><strong class="text-slate-900">Background:</strong> Dedicated trust leader driving foundation initiatives and family engagement programs.</p>
+                            <p><strong class="text-slate-900">Vision:</strong> Passionate about expanding early intervention accessibility and support across Noida.</p>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                        <span>Trustee & Lead</span>
+                        <span class="text-brand-green font-semibold">Founder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Support Finder Quiz -->
+    <section id="quiz" class="py-20 bg-emerald-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10">
+                <span class="bg-brand-amber text-slate-900 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Interactive Tool</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif mt-3">Find the Right Support for Your Child</h2>
+                <p class="text-emerald-200 mt-2">Answer 2 quick questions to get personalized therapy recommendations.</p>
+            </div>
+            
+            <div class="bg-white text-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                <div id="quizStep1">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 font-serif">1. What is your child's primary area of concern?</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button onclick="selectConcern('speech')" class="p-4 text-left border-2 border-slate-200 hover:border-brand-green rounded-2xl font-semibold transition hover:bg-emerald-50/50 flex items-center justify-between">
+                            <span>Speech clarity, pronunciation or talking</span>
+                            <i class="fas fa-chevron-right text-slate-400"></i>
+                        </button>
+                        <button onclick="selectConcern('behavior')" class="p-4 text-left border-2 border-slate-200 hover:border-brand-green rounded-2xl font-semibold transition hover:bg-emerald-50/50 flex items-center justify-between">
+                            <span>Focus, hyperactivity or social behavior</span>
+                            <i class="fas fa-chevron-right text-slate-400"></i>
+                        </button>
+                        <button onclick="selectConcern('motor')" class="p-4 text-left border-2 border-slate-200 hover:border-brand-green rounded-2xl font-semibold transition hover:bg-emerald-50/50 flex items-center justify-between">
+                            <span>Handwriting, coordination or sensory issues</span>
+                            <i class="fas fa-chevron-right text-slate-400"></i>
+                        </button>
+                        <button onclick="selectConcern('hearing')" class="p-4 text-left border-2 border-slate-200 hover:border-brand-green rounded-2xl font-semibold transition hover:bg-emerald-50/50 flex items-center justify-between">
+                            <span>Hearing response or spoken language</span>
+                            <i class="fas fa-chevron-right text-slate-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="quizResult" class="hidden text-center space-y-6">
+                    <div class="w-16 h-16 bg-emerald-100 text-brand-green rounded-full flex items-center justify-center text-3xl mx-auto">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 font-serif">Recommended for Your Child:</h3>
+                        <p id="quizRecommendation" class="text-lg font-semibold text-brand-green mt-2"></p>
+                        <p class="text-slate-600 text-sm mt-1 max-w-md mx-auto">Our experts will conduct a detailed evaluation to build a customized plan for your child.</p>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <button onclick="resetQuiz()" class="px-6 py-2.5 rounded-xl border border-slate-300 font-semibold text-slate-700 hover:bg-slate-50 transition">Retake Quiz</button>
+                        <a href="#book" class="px-8 py-2.5 rounded-xl bg-brand-green text-white font-bold shadow-md hover:bg-brand-green/90 transition">Book Assessment Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Trust Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-12 space-y-6 text-center max-w-3xl mx-auto">
+                    <span class="text-brand-green font-semibold uppercase tracking-wider text-sm">Official Trust Information</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900">GARGI FOUNDATION</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Gargi Foundation is a registered non-governmental trust dedicated to child development, early intervention, and inclusive therapy. Operating under the Indian Trust Act with official NGO Darpan registration, we empower families with professional guidance and empathetic care at our Noida centre.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-2 text-left">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <p class="text-xs text-slate-500 font-semibold uppercase">Registration Type</p>
+                            <p class="font-bold text-slate-900">Trust (Non-Government)</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <p class="text-xs text-slate-500 font-semibold uppercase">Registration Number</p>
+                            <p class="font-bold text-slate-900 font-mono">202400743044492</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <p class="text-xs text-slate-500 font-semibold uppercase">NGO Darpan Unique ID</p>
+                            <p class="font-bold text-slate-900 font-mono">UP/2024/0431515</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <p class="text-xs text-slate-500 font-semibold uppercase">City & State</p>
+                            <p class="font-bold text-slate-900">Noida, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section id="book" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-green font-semibold uppercase tracking-wider text-sm">Schedule Visit</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-slate-900 mt-1">Book an Appointment</h2>
+                <p class="text-slate-600 mt-2">Fill out the quick form below and details will be sent directly to our team.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-200">
+                <!-- Formspree endpoint connected to new email -->
+                <form action="https://formspree.io/f/mqpeeloa" method="POST" class="space-y-6">
+                    <input type="hidden" name="_next" value="#book">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Parent / Guardian Name *</label>
+                            <input type="text" name="parent_name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition" placeholder="Enter 10-digit mobile number">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Child's Name & Age *</label>
+                            <input type="text" name="child_details" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition" placeholder="e.g., Aarav, 5 years">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Service Required *</label>
+                            <select name="service" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition bg-white">
+                                <option>Occupational Therapy</option>
+                                <option>ABA Therapy</option>
+                                <option>Speech Therapy</option>
+                                <option>Auditory Verbal Therapy</option>
+                                <option>Psychological Assessment</option>
+                                <option>Behavioral Assessment</option>
+                                <option>IQ & Behaviour Assessments</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Consultation Mode *</label>
+                            <select name="mode" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition bg-white">
+                                <option>Centre Visit (F-003, Noida Sector 78)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Preferred Date *</label>
+                            <input type="date" name="date" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition bg-white">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Additional Notes / Concerns</label>
+                        <textarea name="notes" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition" placeholder="Tell us briefly about your child's needs..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-green hover:bg-brand-green/90 text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-green/30 transition text-lg">
+                        Confirm Appointment Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-slate-900 text-white pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-brand-green rounded-full flex items-center justify-center text-white font-bold font-serif text-xl">G</div>
+                    <h3 class="text-xl font-bold font-serif tracking-tight">GARGI FOUNDATION</h3>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Helping every child reach their full potential through evidence-based early intervention, special education, and therapy services.
+                </p>
+                <div class="pt-2">
+                    <span class="inline-block bg-slate-800 text-emerald-400 text-xs px-3 py-1 rounded-full font-mono">NGO Darpan: UP/2024/0431515</span>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold font-serif text-amber-400">Our Centre & Contact</h4>
+                <div class="space-y-3 text-sm text-slate-300">
+                    <p class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt text-brand-amber mt-1 shrink-0"></i>
+                        <span>F-003, Antriksh Golf View 1, Sector 78, Noida, Uttar Pradesh</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fas fa-phone-alt text-brand-amber shrink-0"></i>
+                        <a href="tel:8527310311" class="hover:underline font-semibold">+91 8527310311</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-brand-amber shrink-0"></i>
+                        <a href="mailto:gargisewa04@gmail.com" class="hover:underline">gargisewa04@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold font-serif text-amber-400">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li><a href="#services" class="hover:text-amber-400 transition">Our Services</a></li>
+                    <li><a href="#assessment" class="hover:text-amber-400 transition">Assessment Services</a></li>
+                    <li><a href="#founders" class="hover:text-amber-400 transition">Founders</a></li>
+                    <li><a href="#quiz" class="hover:text-amber-400 transition">Support Finder Quiz</a></li>
+                    <li><a href="https://linktr.ee/missioneurydice" target="_blank" class="hover:text-amber-400 transition text-brand-amber font-semibold"><i class="fas fa-link mr-1"></i> Linktree Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold font-serif text-amber-400">Support Hours</h4>
+                <p class="text-sm text-slate-300">Monday – Saturday</p>
+                <p class="text-sm font-semibold text-emerald-400">9:00 AM – 7:00 PM</p>
+                <div class="pt-2 flex flex-col gap-2">
+                    <a href="https://wa.me/918527310311?text=Hello%20Gargi%20Foundation" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2.5 rounded-xl text-sm transition shadow-md">
+                        <i class="fab fa-whatsapp text-lg"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Gargi Foundation Early Intervention & Therapy Centre. All rights reserved.</p>
+            <p>Registered under Indian Trust Act | Noida</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918527310311?text=Hello%20Gargi%20Foundation,%20I%20would%20like%20to%20inquire%20about%20therapy%20services." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl transition transform hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quiz Logic
+        function selectConcern(type) {
+            const step1 = document.getElementById('quizStep1');
+            const resultDiv = document.getElementById('quizResult');
+            const recommendation = document.getElementById('quizRecommendation');
+
+            let recText = "";
+            if(type === 'speech') {
+                recText = "Speech Therapy & Language Development Program";
+            } else if(type === 'behavior') {
+                recText = "ABA Therapy & Behavioral Assessment";
+            } else if(type === 'motor') {
+                recText = "Occupational Therapy with Sensory Integration";
+            } else if(type === 'hearing') {
+                recText = "Auditory Verbal Therapy";
+            }
+
+            recommendation.textContent = recText;
+            step1.classList.add('hidden');
+            resultDiv.classList.remove('hidden');
+        }
+
+        function resetQuiz() {
+            document.getElementById('quizStep1').classList.remove('hidden');
+            document.getElementById('quizResult').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
